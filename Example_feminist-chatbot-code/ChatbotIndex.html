@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Private PrivateLifeChatbot</title>
+
+	<!-- for mobile screens -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.png">
+
+	<link rel="stylesheet" media="all" href="component/styles/setup.css">
+	<link rel="stylesheet" media="all" href="component/styles/says.css">
+	<link rel="stylesheet" media="all" href="component/styles/reply.css">
+	<link rel="stylesheet" media="all" href="component/styles/typing.css">
+  <link rel="stylesheet" media="all" href="component/styles/input.css">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,700&display=swap" rel="stylesheet">
+
+  
+	<style>
+	body {
+    background-size: fill;
+    background-color: #DEC2C2;
+    background-repeat: no-repeat;
+    height: 100vh;
+	}
+	.bubble-container {
+		height: 100vh;
+	}
+	.bubble-container .input-wrap textarea {
+    margin: 0;
+	}
+	</style>
+</head>
+<body>
+ 
+  <div id="chat">
+      </div>
+    </div>
+  </div>
+
+
+
+<script src="component/js/Bubbles.js"></script>
+<script>
+let chatWindow = new Bubbles(document.getElementById("chat"), "chatWindow", {
+  inputCallbackFn: function(o) {
+
+    let match = function(key) {
+      setTimeout(function() {
+        chatWindow.talk(convo, key) // restart current convo from point found in the answer
+      }, 600)
+    }
+
+    let strip = function(text) {
+      return text.toLowerCase().replace(/[\s.,\/#!$%\^&\*;:{}=\-_'"`~()]/g, "")
+    }
+
+    // search function
+    let found = false
+    o.convo[o.standingAnswer].reply.forEach(function(e, i) {
+      strip(e.human_response).includes(strip(o.input)) && o.input.length > 0
+        ? (found = e.bot_answer)
+        : found ? null : (found = false)
+    })
+    found ? match(found) : miss()
+  }
+})
+
+let convo = {
+
+// first section data
+  
+  intro: {
+  bot_says: [ 
+    
+   "Welcome to The Private Life Chatbot" ,
+
+   "This is a guided conversation",
+
+   "In this chatbot,I want to share some advice on avoiding oversharing, so you can prevent sharing private things about yourself",
+   
+   "What would you like to talk about?"
+  
+  ],
+   
+   human_reply: [
+    //button 
+      {
+        human_response: "What areas of your life should you not share?",
+        bot_answer:"Okay, Here 8 Things You Should Always Keep Private In Life"
+      },
+      {
+        human_response: "Tips on how not to overshare",
+        bot_answer: "A list of tips",
+      },
+      {
+        human_response: "A story about oversharing",
+        bot_answer: "How we can we prevent ranting?",
+      },
+      {
+        human_response: "Why you shouldn't overshare?",
+        bot_answer: "How to keep a secret?",
+      },
+      ]
+  },
+
+  //section section data
+
+  "A list of tips": {//this is bot_answer
+   
+    bot_says: ["Do you have your own tips or know of any tips to help not overshare?"
+  ],
+    human_reply: [
+      
+      {
+        human_response: "Yes I know some tips, but I would love a few more",
+        bot_answer: "I'm glad your open to learn"
+
+      },
+      {
+        human_response: "No I don't have any tips at all",
+        bot_answer: "Here are some tips for you"
+      },
+    ]
+  },
+  //third section data
+
+  "I'm glad your open to learn": {//this is bot_answer
+     bot_says: ["6 Tips to Stop Oversharing",
+    "Ask Questions", "Slow down before you speak",
+    "Wait to hit 'send'","Find your oversharing trigger",
+    "Shift the conversation", "Know why you want to share with the person in front of you"
+  ],
+    human_reply: [
+      
+      {
+        human_response: "Thanks for the tips",
+        bot_answer: "For further detail about Tips please follow the link"
+      },
+      {
+        human_response: "No I don't have any tips at all",
+        bot_answer: "Here are some tips for you"
+      },
+    ]
+  },
+
+//fourth section data
+
+"Here are some tips for you": {//this is bot_answer
+   
+  bot_says: ["6 Tips to Stop Oversharing",
+
+    "Ask Questions",
+
+    "Slow down before you speak",
+
+    "Wait to hit 'send'",
+
+    "Find your oversharing trigger",
+
+    "Shift the conversation",  
+
+    "Know why you want to share with the person in front of you",
+  ],
+    human_reply: [
+      
+      {
+        human_response: "For further detail about Tips please follow the link, https://www.scienceofpeople.com/stop-oversharing/",
+        bot_answer: "There are still many other resources that can help provide tips"
+      },
+    ]
+  },
+
+  //Fith section of data
+
+  "For further detail about Tips please follow the link": {//this is bot_answer
+    bot_says: ["For more information on tips, click this link: https://www.scienceofpeople.com/stop-oversharing/",
+    "Please remember that you can make your own tips that can help you, this link is just a starting point"
+  ],
+    human_reply: [
+      
+      {
+        human_response: "I will look further into this link",
+        bot_answer: "There are also many other resources that can help provide tips"
+      },
+    ]
+  },
+
+  //---------------------------------------------------//
+  
+  //Relationship issues section
+
+  "Relationship issues it is then": {//this is bot_answer
+    bot_says: ["Anything that you go through in your relationship, should be resolved between you & your significant other. You can share a few bits about your daily life occasionally, so don't take it the wrong way but don't complain about your partner to other people. Communicate with your partner is something is bothering you. People outside the relationship shouldn't know about intimate details of your relationship. Keep it private."],
+    human_reply: [
+      {
+        human_response: "Yes, I've seen the signficance in keep my relationship issues private",
+        bot_answer: "Thats great, I hope I was great help. Please visit anytime you need advice on how to keeping thins private, If you want to discuss anymore topics please refresh the place and it will take you to beginning"
+      },
+      {
+        human_response: "No I still find I am a bit lost and need more guidance",
+        bot_answer: "Communication For Couples: 13 Ways to Better Communication in Your Relationship (Communication Series Book 5) by Maria hall, this can be purchased on amazon. I suggest you give it a read,If you want to discuss anymore topics please refresh the place and it will take you to beginning"
+      },
+    ]
+  },
+
+ 
+  //Honest deeds section
+  
+  "Honest deeds it is":{//this is bot_answer
+    bot_says: ["If you done something honorable and kind, you shouldn't brag"],
+    human_reply: [
+    {
+        human_response: "why's that",
+        bot_answer: "because"
+      },
+    ]
+  },
+  
+    //further honest deeds section
+  
+    "because": {//this is bot_answer
+    bot_says: ["Being humble instead of a tattletale is a rare virtue", "You don't need recogonition from anyone"],
+    human_reply: [
+    {
+        human_response: "Thank you for the advice",
+        bot_answer: "Now remain humble privately and do things for yourself,If want to discuss anymore topics refresh the page and pick a new topic"
+      },
+    ]
+  },  
+
+    //sixth section
+  
+    "currentstats": {
+    bot_says: ["The statistics of gender inequality in music are pretty dire, despite us living in the 2020s.", "According to recent studies, women make up 16% of all artists, 12% of all songwriters and 3% of all producers.", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Frihannagif.gif?v=1595372842112 />", "Yep...horrific, isn't it.", "The gender pay gap is also pretty bad. At Sony Music UK it is 26.0%, at Warner Music UK it is 31.5%, at Spotify UK it is 9.9%, and at Live Nation UK it is 44.5%."],
+    human_reply: [
+    {
+        human_response: "Omg! Is there anything we can do to fight this?",
+        bot_answer: "discwoman"
+      },
+    ]
+  },
+  
+  //seventh section
+  
+    "othertypes": {
+    bot_says: ["Which other type of intersectionality would you like to find out more about?"],
+    human_reply: [
+    {
+        human_response: "The intersection of ableism and sexism",
+        bot_answer: "ableism"
+      },
+      {
+        human_response: "The intersection of transphobia and sexism",
+        bot_answer: "transphobia"
+      },
+    ]
+  },
+  
+  //eighth section
+  
+    "ableism": {
+    bot_says: ["Ableism and sexism are unfortunately very intertwined.", "In an article on the Intersectionality Times blog, Christina Ryan discusses how women in general are expected to be polite and submissive, but this is amplified even more for women with disabilities.", "People are more patronizing to women rather than men with disabilities because of this, and that it leads to less work opportunities as a result.", "Even though non-disabled people may think that they are being kind, this leads to problems that are deeply intersected between ableism and sexism."],
+    human_reply: [
+      {
+              human_response: "So what about intersectionality in music?",
+        bot_answer: "currentstats"
+      },
+      {
+        human_response: "Wow, I never thought about it that way. Any other types?",
+        bot_answer: "othertypes"
+      },
+    ]
+  },
+  
+  //ninth section
+  
+  "transphobia": {
+  bot_says: ["Alright, get ready to delve into the history books again.", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fready.gif?v=1595453670589 />", "Feminists and transgender people haven't always got on.", "Second-wave feminists were particularly hostile towards trans women, because many of these feminists solely believed in the gender binary.", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fwhat.gif?v=1595454015262 />", "Yep, weird right? You would think they would be supporting them.", "This view has even filtered through all of the other waves of feminism, right through to the present day.", "These women have been dubbed TERFs in recent years, meaning Trans-Exclusionary Radical Feminists. Even JK Rowling is one of them."],
+    human_reply: [
+    {
+        human_response: "How horrific. Are there any other types?",
+        bot_answer: "othertypes"
+      },
+      {
+        human_response: "I am ready to move on to music now. What about sexism in the music industry?",
+        bot_answer: "currentstats"
+      },
+    ]
+  },
+  
+  //tenth section
+
+    "discwoman": {
+    bot_says: ["Yes, there are female-identifying people out there who are constantly fighting for equality in the industry.", "An example of this is Discwoman. They are a New York-based DJ collective and agency which was founded back in 2014.", "Frankie Decaiza Hutchinson who founded the collective stated in an interview that the NYC scene has changed dramatically since they got involved.", "There are now lots more women in line ups around the city compared to a few years ago.", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fyas.gif?v=1595450593984 />"],
+    human_reply: [
+    {
+        human_response: "Wow, how amazing! And what about over here in the UK?",
+        bot_answer: "ukcollectives"
+      },
+    ]
+  },
+  
+  //eleventh section
+  
+    "ukcollectives": {
+    bot_says: ["There are so many amazing female music collectives that exist in the UK right now.", "Leeds-based Equaliser were one of the originals, who host monthly DJ workshops for women and non binary people as well as hosting club nights.", "Similarly in Manchester there are Not Bad for a Girl and All Hands On Deck...", "In Bristol theres Concrete Jungyals...", "And in London theres Rhythm Sister."],
+    human_reply: [
+      {
+        human_response: "Thats fab. But how do we know they are intersectional?",
+        bot_answer: "intersectionalcollectives"
+      },
+      {
+        human_response: "😍",
+        bot_answer: "hope"
+      },
+    ]
+  },
+  
+  //twelfth section
+  
+    "hope": {
+    bot_says: ["Awesome isnt it!", "Luckily there is a little bit of hope going forward.", "Female-identifying people are starting to realise the horrible injustices of the industry and are making a stand.", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fchatbot%20sistas%20gif.gif?v=1598778453667 />"],
+    human_reply: [
+    {
+        human_response: "Thank you Interbot, you have taught me a lot!",
+        bot_answer: "thanks"
+      },
+    ]
+  }, 
+  
+  //thirteenth section
+  
+    "intersectionalcollectives": {
+    bot_says: ["Most of these collectives dont just give a platform for female DJs, but also outrightly welcome non-binary and trans DJs.", "This approach is great because these collectives are recognising that these people are also marginalised within the industry (arguably more than female DJs).", "Black Lives Matter was recently a huge point of discussion within the female-identifying DJ community, and many collectives are rethinking how they can include people of colour."],
+  human_reply: [
+    {
+      human_response: "Thats amazing. At least there is a bit of hope!",
+      bot_answer: "hope"
+    },
+  ]
+},
+  
+  //fourteenth section
+  
+    "thanks": {
+    bot_says: ["It has been my pleasure chatting with you!", "Hopefully you learnt a lot. This means nothing if you dont practise intersectionality in the real world, though.", "Get out there and make the world a better place by spreading the word of intersectional feminism!", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fspread%20the%20word.gif?v=1598778882151 />", "If you're into music, you could even try making your own collective in your city."],
+    human_reply: [
+    {
+        human_response: "Indeed I will! Cheers!",
+        bot_answer: "enjoyday"
+      },
+    ]
+  },
+  
+  //fifteenth section
+  
+    "enjoyday": {
+    bot_says: ["No problem. Enjoy your day and remember that you can always come back here whenever!", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fbye.gif?v=1598779070192 />"],
+  },
+
+}
+
+chatWindow.talk(convo)
+
+
+</script>
+</body>
