@@ -139,12 +139,12 @@ bot_answer: "Online" },
 	    is leading to a topic you don't want to share, shift the conversation to something else"],
 	    human_reply: [
 	      {
-	              human_response: "So what about intersectionality in music?",
-	        bot_answer: "currentstats"
+	              human_response: "What leads to oversharing?",
+	        bot_answer: "Online"
 	      },
 	      {
-	        human_response: "Wow, I never thought about it that way. Any other types?",
-	        bot_answer: "othertypes"
+	        human_response: "Are these all the ways I can avoid oversharing?",
+	        bot_answer: "Avoid"
 	      },
 	    ]
 	  },
@@ -152,15 +152,25 @@ bot_answer: "Online" },
 	  //ninth section
 	  
 	  "Online oversharing": {
-	  bot_says: ["Alright, get ready to delve into the history books again.", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fready.gif?v=1595453670589 />", "Feminists and transgender people haven't always got on.", "Second-wave feminists were particularly hostile towards trans women, because many of these feminists solely believed in the gender binary.", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fwhat.gif?v=1595454015262 />", "Yep, weird right? You would think they would be supporting them.", "This view has even filtered through all of the other waves of feminism, right through to the present day.", "These women have been dubbed TERFs in recent years, meaning Trans-Exclusionary Radical Feminists. Even JK Rowling is one of them."],
+	  bot_says: ["Alright, get ready to delve into the history books again.", 
+	  "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fready.gif?v=1595453670589 />",
+	  "Feminists and transgender people haven't always got on.", 
+	  "Second-wave feminists were particularly hostile towards trans women, because many of these feminists solely believed 
+	  in the gender binary.", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fwhat.gif?v=1595454015262 
+	  />", "Yep, weird right? You would think they would be supporting them.",
+	  "This view has even filtered through all of the other waves of feminism, right through to the present day.",
+	  "These women have been dubbed TERFs in recent years, meaning Trans-Exclusionary Radical Feminists. 
+	  Even JK Rowling is one of them."],
+	  
 	    human_reply: [
 	    {
-	        human_response: "How horrific. Are there any other types?",
-	        bot_answer: "othertypes"
+	        human_response: "Oversharing seems like something I need to avoid at all costs",
+	        bot_answer: "Avoid"
 	      },
 	      {
-	        human_response: "I am ready to move on to music now. What about sexism in the music industry?",
-	        bot_answer: "currentstats"
+
+		human_response: "But how does oversharing online start?",
+	        bot_answer: "Online"
 	      },
 	    ]
 	  },
