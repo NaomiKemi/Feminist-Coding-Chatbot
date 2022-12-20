@@ -197,53 +197,48 @@ than their life normally is so it can appear extranvagant so they can get notice
 	    ]
 	  },
 	  
-	  //twelfth section
+//twelfth section
 	  
-	    "Hope": {
-	    bot_says: ["looks like people can change and ...."],
-	    human_reply: [
-	    {
-	        human_response: "This bot has taught me a lot!",
-	        bot_answer: "Taught"
-	      },
-	    ]
-	  }, 
+"Hope": {
+bot_says: ["looks like people can change and ...."],
+human_reply: [
+{
+human_response: "This bot has taught me a lot!",
+bot_answer: "Taught"},]}, 
 	  
-	  //thirteenth section
+//thirteenth section
 	  
-	    "Body language": {
-	    bot_says: ["Most of these collectives dont just give a platform for female DJs, but also outrightly welcome non-binary and trans DJs.", "This approach is great because these collectives are recognising that these people are also marginalised within the industry (arguably more than female DJs).", "Black Lives Matter was recently a huge point of discussion within the female-identifying DJ community, and many collectives are rethinking how they can include people of colour."],
-	  human_reply: [
-	    {
-	      human_response: "Thanks for more understanding, i can fully overcome oversharing",
-	      bot_answer: "Hope"
-	    },
-	  ]
-	},
+bot_says: ["Most of these collectives dont just give a platform for female DJs, but also outrightly welcome non-binary and trans DJs.", 
+"This approach is great because these collectives are recognising that these people are also marginalised within the industry (
+arguably more than female DJs).", "Black Lives Matter was recently a huge point of discussion within the female-identifying DJ community,
+and many collectives are rethinking how they can include people of colour."],
+
+human_reply: [
+{
+human_response: "Thanks for more understanding, i can fully overcome oversharing",
+bot_answer: "Hope" },] },
 	  
-	  //fourteenth section
+//fourteenth section
 	  
-	    "thanks": {
-	    bot_says: ["It has been my pleasure chatting with you!", "Hopefully you learnt a lot. This means nothing if you dont practise intersectionality in the real world, though.", "Get out there and make the world a better place by spreading the word of intersectional feminism!", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fspread%20the%20word.gif?v=1598778882151 />", "If you're into music, you could even try making your own collective in your city."],
-	    human_reply: [
-	    {
-	        human_response: "Indeed I will! Cheers!",
-	        bot_answer: "enjoyday"
-	      },
-	    ]
-	  },
+"thanks": {
+bot_says: ["It has been my pleasure chatting with you!", "Hopefully you learnt a lot. This means nothing if you dont practise intersectionality in the real world, though.", "Get out there and make the world a better place by spreading the word of intersectional feminism!", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fspread%20the%20word.gif?v=1598778882151 />", "If you're into music, you could even try making your own collective in your city."],
+human_reply: [
+
+{
+human_response: "Indeed I will! Cheers!",
+bot_answer: "enjoyday" },] },
 	  
-	  //fifteenth section
+//fifteenth section
 	  
-	    "enjoyday": {
-	    bot_says: ["No problem. Enjoy your day and remember that you can always come back here whenever!", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fbye.gif?v=1598779070192 />"],
-	  },
+"enjoyday": {
+bot_says: ["No problem. Enjoy your day and remember that you can always come back here whenever!", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fbye.gif?v=1598779070192 />"],
+},
 	
 
-	}
+}
 	
 
-	chatWindow.talk(convo)
-	</script>
-	</body>
+chatWindow.talk(convo)
+</script>
+</body>
 
