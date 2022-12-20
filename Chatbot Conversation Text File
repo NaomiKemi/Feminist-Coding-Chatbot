@@ -81,7 +81,7 @@ bot_answer: "Online" },
 	   human_reply: [
 	    {
   	        human_response: "That was super interesting. So how can I avoid oversharing?",
-	        bot_answer: "othertypes"
+	        bot_answer: "Avoid"
 	      },
 	    ]
 	  },  
@@ -89,11 +89,23 @@ bot_answer: "Online" },
 
 	    //sixth section
 	  
-	    "currentstats": {
-	    bot_says: ["The statistics of gender inequality in music are pretty dire, despite us living in the 2020s.", "According to recent studies, women make up 16% of all artists, 12% of all songwriters and 3% of all producers.", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Frihannagif.gif?v=1595372842112 />", "Yep...horrific, isn't it.", "The gender pay gap is also pretty bad. At Sony Music UK it is 26.0%, at Warner Music UK it is 31.5%, at Spotify UK it is 9.9%, and at Live Nation UK it is 44.5%."],
-	    human_reply: [
+	    "Online": {
+	    bot_says: ["When using social media too much it lead to oversharing, a few reasons that people may share too much online", 
+	    
+	    "social media invite users to share everything about their lives, it's so easy to post an life update, a video, an event which
+	    just a click of a button "
+	    
+	    "To vent emotions and stress, i guarentee we probably all seen a facebook rent once in our life time and this is because social
+	    media gives everyone a voice and the platform to express it. Also to let our their frustrations according to the article Oversharing: Why Do We Do It and How Do We Stop?
+	    from the Huffngton Post" 'oversharing is fueled by out insecurites', people care too much what others think about them and try to change
+	    how people see them. This leads to oversharing too much info"
+	    
+	    "Some people just want to 15 minutes of fame, to get that more likes, comments and shares they present their lives better
+	    than their life normally is so it can appear extranvagant so they can get noticed even if its too much", 
+	   
+	   [
 	    {
-	        human_response: "Omg! Is there anything we can do to fight this?",
+	        human_response: "Omg! Is there ?",
 	        bot_answer: "discwoman"
 	      },
 	    ]
