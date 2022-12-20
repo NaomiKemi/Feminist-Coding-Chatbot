@@ -92,8 +92,10 @@ bot_answer: "Online" },
 	    "Online": {
 	    bot_says: ["When using social media too much it lead to oversharing, a few reasons that people may share too much online", 
 	    
-	    "social media invite users to share everything about their lives, it's so easy to post an life update, a video, an event which
-	    just a click of a button "
+	    "Social media invite users to share everything about their lives, it's so easy to post an life update, a video, an event which
+	    just a click of a button. This can lead to the fear of missing out this leads to the feeling that people are doing things without
+	    you or that things are passing you by. Social media makes you think that oversharing is being authentic, using a platform to air
+	    out personal details can have some big consequences"
 	    
 	    "To vent emotions and stress, i guarentee we probably all seen a facebook rent once in our life time and this is because social
 	    media gives everyone a voice and the platform to express it. Also to let our their frustrations according to the article Oversharing: Why Do We Do It and How Do We Stop?
@@ -105,8 +107,8 @@ bot_answer: "Online" },
 	   
 	   [
 	    {
-	        human_response: "Omg! Is there ?",
-	        bot_answer: "discwoman"
+	        human_response: "What is the difference between authenticity and oversharing?",
+	        bot_answer: "Authenticity"
 	      },
 	    ]
 	  },
