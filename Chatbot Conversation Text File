@@ -116,15 +116,15 @@ bot_answer: "Online" },
 	  //seventh section
 	  
 	    "othertypes": {
-	    bot_says: ["Which other type of intersectionality would you like to find out more about?"],
+	    bot_says: ["What are the negatives for oversharing?"],
 	    human_reply: [
 	    {
-	        human_response: "The intersection of ableism and sexism",
-	        bot_answer: "ableism"
+	        human_response: "When does oversharing become harmful?",
+	        bot_answer: "Harmful"
 	      },
 	      {
-	        human_response: "The intersection of transphobia and sexism",
-	        bot_answer: "transphobia"
+	        human_response: "Does oversharing have any affect on your mental health?,
+	        bot_answer: "Health"
 	      },
 	    ]
 	  },
