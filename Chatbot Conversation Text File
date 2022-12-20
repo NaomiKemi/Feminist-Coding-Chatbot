@@ -98,20 +98,20 @@ how people see them. This leads to oversharing too much info"
 "Some people just want to 15 minutes of fame, to get that more likes, comments and shares they present their lives better
 than their life normally is so it can appear extranvagant so they can get noticed even if its too much", 
 	   
-	   [
-	    {
-	        human_response: "So am i able to tell if im oversharing",
-	        bot_answer: "Tell"
-	      },
-	    ]
-	  },
+[
+{
+]human_response: "So am i able to tell if im oversharing",
+bot_answer: "Tell"
+},
+]
+},
 	  
-	  //seventh section
+//seventh section
 	  
-	    "Avoid": {
-	    bot_says: ["How can i avoid oversharing?"],
-	    human_reply: [
-	    {
+"Avoid": {
+bot_says: ["How can i avoid oversharing?"],
+human_reply: [
+{
 	        human_response: "How do i avoid oversharing in person?",
 	        bot_answer: "In person oversharing"
 	      },
@@ -171,14 +171,14 @@ than their life normally is so it can appear extranvagant so they can get notice
 //tenth section
 	
 "Tell": {
-bot_says: ["Yes, there are female-identifying people out there who are constantly fighting for equality in the industry.", 
-"An example of this is Discwoman. They are a New York-based DJ collective and agency which was founded back in 2014.", 
-"Frankie Decaiza Hutchinson who founded the collective stated in an interview that the NYC scene has changed dramatically 
-since they got involved.", "There are now lots more women in line ups around the city compared to a few years ago.", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fyas.gif?v=1595450593984 />"],
+bot_says: ["It can be really heard to tell when you are oversharing in real time, but there are some cues which 
+can help you see and redirect before you far down the route of oversharing, one of the best ways is to look at 
+the reactions next to you. Pay attention to things like fiddling their fingers, scrunching uo their face because
+these are ways to tell if someone is uncomfortable"],
 	    
 human_reply: [
 {
-human_response: "so i need to learn to overcome oversharing?",
+human_response: "So I need to learn to overcome oversharing?",
 bot_answer: "overcome" },] },
 
 //eleventh section
