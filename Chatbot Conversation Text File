@@ -3,31 +3,30 @@ TEMP CHAT FILE
 let convo = {
 	
 
-	// first section
+// first section
 	  
-	  intro: {
-	  bot_says: ["Hey, Interbot here! Interbot is here to help you learn about intersectionality in the music industry.", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fhey%20there.gif?v=1592490958242 />"],
-	    human_reply: [
-	      {
-	        human_response: "Nice, but what actually is intersectionality?",
-	        bot_answer: "goodquestion",
-	      },
-	      ]
-	  },
-	  
-	  //second section
-	
+intro: {
+bot_says: ["IF you've ever found yourself telling stranger inimate details about your personal life or used social
+media as a soapbox or a way to vent your emotions, you were likely oversharing, It's so easy to do and if you find yourself regularly 
+overshaing and you want to change your ways,theres is some hope and the personal life chatbot can help"],
 
-	    "goodquestion": {
-	    bot_says: ["Good question! Intersectionality is the way in which different kinds of discrimination overlap. For example, women of colour are doubly discriminated against, because they suffer from both racism and sexism."],
-	    human_reply: [
-	      {
-	        human_response: "Ah, I understand. Ive heard about this before.",
-	        bot_answer: "explore"
-	      },
-	      {
-	        human_response: "Thats awful! Is there somewhere I can read up on the topic?",
-	        bot_answer: "books"
+human_reply: [
+{human_response: "Before we move on, can I have a bit more information of what oversharing is?",
+bot_answer: "Sure,good question", },]},
+	  
+//second section
+"Sure,good question": {
+bot_says: ["Good question! Oversharing is when people share too much personal to the public or a stranger,
+It can happen both on and offline.But it can be a big problem mainly on social media as your easily putiing
+information ",},]},
+	  
+human_reply: [
+{ human_response: "Can we see the difference between oversharing online and offline.",
+bot_answer: "explore"},
+
+{
+human_response: "So why do people oversharing if it is has negative conquences",
+bot_answer: "negative"
 	
 
 	      },
@@ -41,21 +40,21 @@ let convo = {
 	    bot_says: ["Awesome. What would you like to explore next?"],
 	    human_reply: [
 	      {
-	        human_response: "Current stats of gender inequality in music",
-	        bot_answer: "currentstats"
+	        human_response: "Onine types of oversharing",
+	        bot_answer: "Online"
 	
 
 	      },
 	      {
-	        human_response: "The history of intersectional feminism",
-	        bot_answer: "history"
+	        human_response: "Offline types of sharing",
+	        bot_answer: "Offline"
 	      },
 	    ]
 	  },
 	  
 	  //fourth section
 	  
-	    "books": {
+	    "Negative": {
 	    bot_says: ["For sure! There are tons of books that you can check out...", "To read about intersectionality from a black female perspective, read 'Why Im No Longer Talking to White People About Race' by Reni Eddo-Lodge...", "from a trans perspective, check out ‘To My Trans Sisters’ by Charlie Craggs...", "or if you're interested in learning about where sexism and ableism intersect, check out Care Work - Dreaming Disability Justice by Leah Lakshmi Piepzna-Samarasinha."],
 	    human_reply: [
 	    {
