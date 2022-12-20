@@ -80,7 +80,7 @@ bot_answer: "Online" },
 	   
 	   human_reply: [
 	    {
-  	        human_response: "That was super interesting. But what about other types of intersectionality?",
+  	        human_response: "That was super interesting. So how can I avoid oversharing?",
 	        bot_answer: "othertypes"
 	      },
 	    ]
