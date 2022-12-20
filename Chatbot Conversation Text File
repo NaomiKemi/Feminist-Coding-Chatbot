@@ -142,31 +142,27 @@ human_reply: [
 	    ]
 	  },
 	  
-	  //ninth section
-	  
-	  "Online oversharing": {
-	  bot_says: ["Alright, get ready to delve into the history books again.", 
-	  "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fready.gif?v=1595453670589 />",
-	  "Feminists and transgender people haven't always got on.", 
-	  "Second-wave feminists were particularly hostile towards trans women, because many of these feminists solely believed 
-	  in the gender binary.", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fwhat.gif?v=1595454015262 
-	  />", "Yep, weird right? You would think they would be supporting them.",
-	  "This view has even filtered through all of the other waves of feminism, right through to the present day.",
-	  "These women have been dubbed TERFs in recent years, meaning Trans-Exclusionary Radical Feminists. 
-	  Even JK Rowling is one of them."],
-	  
-	    human_reply: [
-	    {
-	        human_response: "Oversharing seems like something I need to avoid at all costs",
-	        bot_answer: "Avoid"
-	      },
-	      {
+//ninth section
 
-		human_response: "But how does oversharing online start?",
-	        bot_answer: "Online"
-	      },
-	    ]
-	  },
+"Online oversharing": {
+bot_says: [" Its hard to know when you're oversharing in the moment however you can try these way to her overcome any 
+	    natural tendancy you have to overshare. Tip 1:wait to hit 'send' if you feel like you might be oversharing
+	    via text or a online post, set it aside for a bit and then read the message with a clear mind you could even
+	    ask a friend and ask them their opinion to see if they think you're oversharing, Tip 2: Do not post whwn you are 
+	    angry' anger can cause you to say things you wouldn't have said, if you post the wrong thing it can follow you 
+	    for a long time. If you feeling like post a rant in a fit of rage,DON'T, Tip: 'Be selective' before you post anuything
+	    on social media, take some time to decide what to post and use your best judgment to selective on what
+	    you share"],
+	  
+human_reply: [
+{
+	
+human_response: "Oversharing seems like something I need to avoid at all costs",
+bot_answer: "Avoid"
+{
+
+human_response: "But how does oversharing online start?",
+bot_answer: "Online" }, ] },
 	  
 //tenth section
 	
