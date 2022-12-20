@@ -45,29 +45,26 @@ bot_answer: "Online" },
 //fourth section
 	  
 "Negative": {
-	    bot_says: ["There are many reasons people may overshare, its often comes from
-	    a desire to connect to people, when maybe they feel lonely or it could be that a person
-	    comes from a family when oversharing is encouraged. Another reason people overshare is  
-	    because people want to avoid awkward silence and they will do anything to avoid it. But 
-	    through many studies it appears that using social media could lead to oversharing" ],
-	    human_reply: [
-	    {
-	        human_response: "So I know why, are there types of oversharing",
-	        bot_answer: "explore"
-	      },
-	    ]
-	  },
+bot_says: ["There are many reasons people may overshare, its often comes from
+a desire to connect to people, when maybe they feel lonely or it could be that a person
+comes from a family when oversharing is encouraged. Another reason people overshare is  
+because people want to avoid awkward silence and they will do anything to avoid it. But 
+through many studies it appears that using social media could lead to oversharing" ],
 	  
-	    //fifth section
+human_reply: [
+{ human_response: "So I know why, are there types of oversharing",
+bot_answer: "explore"},] },
 	  
-	    "Offline": {
-	    bot_says: ["You've probably been at work and seen many incidents of people discussing marital issues with your colleagues", 
-	    "This is an example of oversharing", "How and why someone shares offline is something to delve into because many people only
-	    look at social media being the reason why many people overshare","We are going to be touching of 3 of the biggest reasons why", 
-	    "One reason is because you might feel a false sense of intimacy, this might be why you've seen soo many hairdresser scene in filmas
-	    of customers discussing their boyfriend/husbands problems because when they are cutting yout hair or maybe painting your nails it
-	    creates that false sense.You may not even know hairdresser's name but they're in your personal space,many people see that gives them
-	    the permission to start talking as if it was their partner or close friend", 
+//fifth section
+	  
+"Offline": {
+bot_says: ["You've probably been at work and seen many incidents of people discussing marital issues with your colleagues", 
+"This is an example of oversharing", "How and why someone shares offline is something to delve into because many people only
+look at social media being the reason why many people overshare","We are going to be touching of 3 of the biggest reasons why", 
+"One reason is because you might feel a false sense of intimacy, this might be why you've seen soo many hairdresser scene in filmas
+of customers discussing their boyfriend/husbands problems because when they are cutting yout hair or maybe painting your nails it
+creates that false sense.You may not even know hairdresser's name but they're in your personal space,many people see that gives them
+the permission to start talking as if it was their partner or close friend", 
 	    
 	    "Another reason is a person finds solace in a stranger, some people can easily share intimate details to a complete stranger. You have
 	    no relationship with the stranger, so theres no reason for them to judge you and he or she does it doen;t matter because you will probably never 
