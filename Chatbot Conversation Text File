@@ -100,7 +100,7 @@ than their life normally is so it can appear extranvagant so they can get notice
 	   
 	   [
 	    {
-	        human_response: "So am i able to tell if im oversharng",
+	        human_response: "So am i able to tell if im oversharing",
 	        bot_answer: "Tell"
 	      },
 	    ]
@@ -125,7 +125,7 @@ than their life normally is so it can appear extranvagant so they can get notice
 	  //eighth section
 	  
 	    "In person oversharing": {
-	    bot_says: ["Its hard to know when you make overshare during a moment however you can try these way to her overcome any 
+	    bot_says: ["Its hard to know when you're oversharing in the moment however you can try these way to her overcome any 
 	    natural tendancy you have to overshare. Tip 1: Ask questions so it gives the other person room to talk about themselves,
 	    Tip 2: Slow down before you start to speak. Take big breath before answering a question. Think to yourself 'is the information
 	    you are about to share relevant to the conversation' Tip 3: shift the conversation, if you feel like the conversation 
@@ -168,27 +168,27 @@ than their life normally is so it can appear extranvagant so they can get notice
 	    ]
 	  },
 	  
-	  //tenth section
+//tenth section
 	
+"Tell": {
+bot_says: ["Yes, there are female-identifying people out there who are constantly fighting for equality in the industry.", 
+"An example of this is Discwoman. They are a New York-based DJ collective and agency which was founded back in 2014.", 
+"Frankie Decaiza Hutchinson who founded the collective stated in an interview that the NYC scene has changed dramatically 
+since they got involved.", "There are now lots more women in line ups around the city compared to a few years ago.", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fyas.gif?v=1595450593984 />"],
+	    
+human_reply: [
+{
+human_response: "so i need to learn to overcome oversharing?",
+bot_answer: "overcome" },] },
 
-	    "Tell": {
-	    bot_says: ["Yes, there are female-identifying people out there who are constantly fighting for equality in the industry.", "An example of this is Discwoman. They are a New York-based DJ collective and agency which was founded back in 2014.", "Frankie Decaiza Hutchinson who founded the collective stated in an interview that the NYC scene has changed dramatically since they got involved.", "There are now lots more women in line ups around the city compared to a few years ago.", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fyas.gif?v=1595450593984 />"],
-	    human_reply: [
-	    {
-	        human_response: "so i need to learn to overcome oversharing?",
-	        bot_answer: "overcome"
-	      },
-	    ]
-	  },
+//eleventh section
 	  
-	  //eleventh section
-	  
-	    "overcome": {
-	    bot_says: ["There are so many amazing female music collectives that exist in the UK right now.", "Leeds-based Equaliser were one of the originals, who host monthly DJ workshops for women and non binary people as well as hosting club nights.", "Similarly in Manchester there are Not Bad for a Girl and All Hands On Deck...", "In Bristol theres Concrete Jungyals...", "And in London theres Rhythm Sister."],
-	    human_reply: [
-	      {
-	        human_response: "quick question how do i read someones body language?",
-	        bot_answer: "body language"
+"overcome": {
+bot_says: ["There are so many amazing female music collectives that exist in the UK right now.", "Leeds-based Equaliser were one of the originals, who host monthly DJ workshops for women and non binary people as well as hosting club nights.", "Similarly in Manchester there are Not Bad for a Girl and All Hands On Deck...", "In Bristol theres Concrete Jungyals...", "And in London theres Rhythm Sister."],
+human_reply: [
+{
+human_response: "quick question how do i read someones body language?",
+bot_answer: "body language"
 	      },
 	      {
 	        human_response: "💪🏾",
