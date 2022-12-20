@@ -1,4 +1,4 @@
-Tintro: {
+intro: {
   bot_says: ["Hello"],
     human_reply: [
       {
