@@ -107,32 +107,36 @@ bot_answer: "Online" },
 	   
 	   [
 	    {
-	        human_response: "What is the difference between authenticity and oversharing?",
-	        bot_answer: "Authenticity"
+	        human_response: "So am i able to tell if im oversharng",
+	        bot_answer: "Tell"
 	      },
 	    ]
 	  },
 	  
 	  //seventh section
 	  
-	    "othertypes": {
-	    bot_says: ["What are the negatives for oversharing?"],
+	    "Avoid": {
+	    bot_says: ["How can i avoid oversharing?"],
 	    human_reply: [
 	    {
-	        human_response: "When does oversharing become harmful?",
-	        bot_answer: "Harmful"
+	        human_response: "How do i avoid oversharing in person?",
+	        bot_answer: "In person oversharing"
 	      },
 	      {
-	        human_response: "Does oversharing have any affect on your mental health?,
-	        bot_answer: "Health"
+	        human_response: "How do i avoid oversharing online?,
+	        bot_answer: "Online oversharing"
 	      },
 	    ]
 	  },
 	  
 	  //eighth section
 	  
-	    "ableism": {
-	    bot_says: ["Ableism and sexism are unfortunately very intertwined.", "In an article on the Intersectionality Times blog, Christina Ryan discusses how women in general are expected to be polite and submissive, but this is amplified even more for women with disabilities.", "People are more patronizing to women rather than men with disabilities because of this, and that it leads to less work opportunities as a result.", "Even though non-disabled people may think that they are being kind, this leads to problems that are deeply intersected between ableism and sexism."],
+	    "In person oversharing": {
+	    bot_says: ["Its hard to know when you make overshare during a moment however you can try these way to her overcome any 
+	    natural tendancy you have to overshare. Tip 1: Ask questions so it gives the other person room to talk about themselves,
+	    Tip 2: Slow down before you start to speak. Take big breath before answering a question. Think to yourself 'is the information
+	    you are about to share relevant to the conversation' Tip 3: shift the conversation, if you feel like the conversation 
+	    is leading to a topic you don't want to share, shift the conversation to something else"],
 	    human_reply: [
 	      {
 	              human_response: "So what about intersectionality in music?",
@@ -147,7 +151,7 @@ bot_answer: "Online" },
 	  
 	  //ninth section
 	  
-	  "transphobia": {
+	  "Online oversharing": {
 	  bot_says: ["Alright, get ready to delve into the history books again.", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fready.gif?v=1595453670589 />", "Feminists and transgender people haven't always got on.", "Second-wave feminists were particularly hostile towards trans women, because many of these feminists solely believed in the gender binary.", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fwhat.gif?v=1595454015262 />", "Yep, weird right? You would think they would be supporting them.", "This view has even filtered through all of the other waves of feminism, right through to the present day.", "These women have been dubbed TERFs in recent years, meaning Trans-Exclusionary Radical Feminists. Even JK Rowling is one of them."],
 	    human_reply: [
 	    {
@@ -164,52 +168,52 @@ bot_answer: "Online" },
 	  //tenth section
 	
 
-	    "discwoman": {
+	    "Tell": {
 	    bot_says: ["Yes, there are female-identifying people out there who are constantly fighting for equality in the industry.", "An example of this is Discwoman. They are a New York-based DJ collective and agency which was founded back in 2014.", "Frankie Decaiza Hutchinson who founded the collective stated in an interview that the NYC scene has changed dramatically since they got involved.", "There are now lots more women in line ups around the city compared to a few years ago.", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fyas.gif?v=1595450593984 />"],
 	    human_reply: [
 	    {
-	        human_response: "Wow, how amazing! And what about over here in the UK?",
-	        bot_answer: "ukcollectives"
+	        human_response: "so i need to learn to overcome oversharing?",
+	        bot_answer: "overcome"
 	      },
 	    ]
 	  },
 	  
 	  //eleventh section
 	  
-	    "ukcollectives": {
+	    "overcome": {
 	    bot_says: ["There are so many amazing female music collectives that exist in the UK right now.", "Leeds-based Equaliser were one of the originals, who host monthly DJ workshops for women and non binary people as well as hosting club nights.", "Similarly in Manchester there are Not Bad for a Girl and All Hands On Deck...", "In Bristol theres Concrete Jungyals...", "And in London theres Rhythm Sister."],
 	    human_reply: [
 	      {
-	        human_response: "Thats fab. But how do we know they are intersectional?",
-	        bot_answer: "intersectionalcollectives"
+	        human_response: "quick question how do i read someones body language?",
+	        bot_answer: "body language"
 	      },
 	      {
-	        human_response: "😍",
-	        bot_answer: "hope"
+	        human_response: "💪🏾",
+	        bot_answer: "Hope"
 	      },
 	    ]
 	  },
 	  
 	  //twelfth section
 	  
-	    "hope": {
-	    bot_says: ["Awesome isnt it!", "Luckily there is a little bit of hope going forward.", "Female-identifying people are starting to realise the horrible injustices of the industry and are making a stand.", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fchatbot%20sistas%20gif.gif?v=1598778453667 />"],
+	    "Hope": {
+	    bot_says: ["looks like people can change and ...."],
 	    human_reply: [
 	    {
-	        human_response: "Thank you Interbot, you have taught me a lot!",
-	        bot_answer: "thanks"
+	        human_response: "This bot has taught me a lot!",
+	        bot_answer: "Taught"
 	      },
 	    ]
 	  }, 
 	  
 	  //thirteenth section
 	  
-	    "intersectionalcollectives": {
+	    "Body language": {
 	    bot_says: ["Most of these collectives dont just give a platform for female DJs, but also outrightly welcome non-binary and trans DJs.", "This approach is great because these collectives are recognising that these people are also marginalised within the industry (arguably more than female DJs).", "Black Lives Matter was recently a huge point of discussion within the female-identifying DJ community, and many collectives are rethinking how they can include people of colour."],
 	  human_reply: [
 	    {
-	      human_response: "Thats amazing. At least there is a bit of hope!",
-	      bot_answer: "hope"
+	      human_response: "Thanks for more understanding, i can fully overcome oversharing",
+	      bot_answer: "Hope"
 	    },
 	  ]
 	},
