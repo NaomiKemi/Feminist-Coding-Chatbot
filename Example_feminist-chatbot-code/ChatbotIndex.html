@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Private PrivateLifeChatbot</title>
+
+	<!-- for mobile screens -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.png">
+
+	<link rel="stylesheet" media="all" href="component/styles/setup.css">
+	<link rel="stylesheet" media="all" href="component/styles/says.css">
+	<link rel="stylesheet" media="all" href="component/styles/reply.css">
+	<link rel="stylesheet" media="all" href="component/styles/typing.css">
+  <link rel="stylesheet" media="all" href="component/styles/input.css">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,700&display=swap" rel="stylesheet">
+
+  
+	<style>
+	body {
+    background-size: fill;
+    background-color: #DEC2C2;
+    background-repeat: no-repeat;
+    height: 100vh;
+	}
+	.bubble-container {
+		height: 100vh;
+	}
+	.bubble-container .input-wrap textarea {
+    margin: 0;
+	}
+	</style>
+</head>
+<body>
+ 
+  <div id="chat">
+      </div>
+    </div>
+  </div>
+
+
+
+<script src="component/js/Bubbles.js"></script>
+<script>
+let chatWindow = new Bubbles(document.getElementById("chat"), "chatWindow", {
+  inputCallbackFn: function(o) {
+
+    let match = function(key) {
+      setTimeout(function() {
+        chatWindow.talk(convo, key) // restart current convo from point found in the answer
+      }, 600)
+    }
+
+    let strip = function(text) {
+      return text.toLowerCase().replace(/[\s.,\/#!$%\^&\*;:{}=\-_'"`~()]/g, "")
+    }
+
+    // search function
+    let found = false
+    o.convo[o.standingAnswer].reply.forEach(function(e, i) {
+      strip(e.human_response).includes(strip(o.input)) && o.input.length > 0
+        ? (found = e.bot_answer)
+        : found ? null : (found = false)
+    })
+    found ? match(found) : miss()
+  }
+})
+
+let convo = {
+
+// first section
+  
+intro: {
+  bot_says: ["Hello"],
+    human_reply: [
+      {
+        human_response: "Press to start conversation",
+        bot_answer: "start",
+      },
+      ]
+  },
+
+  "start":{
+  bot_says: ["Since it's so simple to do, if you've ever found yourself oversharing intimate facts about your personal life with strangers or using social media to express your feelings, there is some hope that you can change your ways. The personal life chatbot can assist you."],
+    human_reply: [
+      {
+        human_response: "Before we move on, can I have a bit more information of what oversharing is?",
+        bot_answer: "Sure,good question",
+      },
+      ]
+  },
+  
+  //second section
+
+  "Sure,good question": {
+    bot_says: ["A good query! Oversharing is when someone divulges too much personal information to a stranger or the general public. It can occur both online and offline. But because information is shared so readily on social media, it can be a serious issue."],
+    human_reply: [
+    {  human_response: "Can we see the difference between oversharing online and offline?" 
+    
+   ,bot_answer: "explore"},
+      
+    { human_response: "So why do people oversharing if it is has negative conquences?"
+    , bot_answer: "negative" }, 
+    ]
+  },
+  
+  //third section
+    "explore": {
+    bot_says: ["Awesome. What would you like to explore next?"],
+    human_reply: [
+      {
+        human_response: "Online oversharing",
+        bot_answer: "online"
+      },
+      {
+        human_response: "Offline oversharing ",
+        bot_answer:"offline" 
+      },
+    ]
+  },
+  
+  //fourth section
+  
+  "negative": {
+    bot_says: ["People may overshare for a variety of reasons, including the need to connect with others when they may be feeling lonely or because it may be encouraged in their family. People will say or do anything to escape awkward silence, which is another reason why they overshare. But numerous research suggest that utilising social media might result in oversharing."],
+    human_reply: [
+    {
+        human_response: "So I know why, are there any more types of oversharing",
+        bot_answer: "explore"
+      },
+    ]
+  },
+  
+    //fifth section
+  
+    "offline": {
+    bot_says: ["This is an example of oversharing,How and why someone shares offline is something to delve into because many people only look at social media as the reason why many people overshare We are going to be touching of 3 of the biggest reasons why and You've probably been at work and seen many incidents of people discussing marital issues with your colleagues", 
+"One explanation is that you could get a false sense of intimacy. This may explain why you've seen so many hairdresser scenes in movies where customers talk about their boyfriends' or spouses' difficulties since it fosters that impression when they are cutting your hair or perhaps painting your nails. Many people believe that because the hairdresser is in their personal space and you may not even know their name, they have licence to start speaking to you as though they were their lover or close friend.", 
+	    
+"Another factor is that some people find comfort in strangers and are willing to divulge private information to them. Since you don't know the stranger, they have no right to judge you, and even if they do, it won't matter because you're unlikely to see them again. Similar to a less expensive form of therapy, talking to a stranger",
+	    
+" A person could also have weak limits; oversharers occasionally exhibit a lack of boundaries. Therefore, women are unaware that it is improper to inform a coworker about their husband's terrible behaviour in bed or even to disclose financial troubles to complete strangers. Lack of boundaries can be problematic for forming close bonds since the oversharer loses faith in their ability to find listeners for their daily woes."],
+    human_reply: [
+    {
+        human_response: "That was super interesting. So how can I avoid oversharing?",
+        bot_answer: "Avoid"
+      },
+    ]
+  },  
+
+
+    //sixth section
+  
+    "online": {
+    bot_says: ["A person might also lack boundaries; oversharers occasionally struggle with this. Therefore, many are unaware that discussing their husband's terrible bed habits with a coworker or even discussing their financial troubles with complete strangers is inappropriate. Lack of boundaries can make it difficult to form close bonds since the oversharer becomes unsure of who wants to hear about their problems on a daily basis.",
+	              "Because social media offers everyone a voice and a place to express themselves, I guarantee that we have all seen a Facebook rant at some point in our lives. According to the article Oversharing: Why Do We Do It and How Do We Stop?, people also share their frustrations. According to the Huffington Post, 'oversharing is fueled by our insecurities' as people strive to modify how other people perceive them out of an excessive concern for what others think of them. This encourages excessive information sharing.",
+	              "Some people only want their 15 minutes of fame, so they depict their lives in ways that are more extravagant than they actually are in order to attract attention, even if it is unwarranted." ],
+    human_reply: [
+    {
+        human_response: "So how can I tell if I'm sharing too much?",
+        bot_answer: "Tell"
+      },
+    ]
+  },
+  
+  //seventh section
+  
+  "Avoid": {
+    bot_says: ["Do you want to know how not to overshare?"],
+    human_reply: [
+    {
+        human_response: "How do i avoid oversharing in person?",
+        bot_answer: "In person oversharing"
+      },
+      {
+        human_response: "How do i avoid oversharing online?",
+        bot_answer: "online oversharing"
+      },
+    ]
+  },
+  
+  //eighth section
+  
+   "In person oversharing": {
+    bot_says: ["Although it can be challenging to recognise when you are sharing too much in the heat of the moment, you can use these strategies to combat any innate propensity for oversharing. First, ask questions to give the other person room to talk about themselves. Second, speak more slowly when you do. Take a deep breath before responding to a query. Consider whether what you are about to say is pertinent to the discourse. Tip 3: Change the subject of the discussion if you sense that it is heading toward a subject you don't want to discuss."],
+    human_reply: [
+      {
+              human_response: "What leads to oversharing?",
+        bot_answer: "online"
+      },
+      {
+        human_response: "Are these all the ways I can avoid oversharing?",
+        bot_answer: "Avoid"
+      },
+    ]
+  },
+  
+  //ninth section
+  
+  "online oversharing": {
+  bot_says: ["It can be challenging to recognise when you are oversharing in the heat of the moment, but you can try these strategies to help you fight any innate tendency you may have to do so. Tip 1: If you suspect you might be oversharing via text or an online post, hold off on pressing 'send' until you can read the message with clarity. You can also ask a friend if they think you are oversharing. Tip 2: Avoid posting when you're upset. Anger might lead you to say things you wouldn't normally say, and if you publish something inappropriate, it could stick with you for a very long time. Tip: If you want to submit a rant in a fit of wrath, DON'T. Tip: Be careful while posting on social media. Before you post anything, take some time to consider your options and use your best judgement."],
+    human_reply: [
+    {
+        human_response: "But how does oversharing start?"
+        ,bot_answer: "online" 
+      },
+    {
+        human_response: "Oversharing seems like something I need to avoid at all costs",
+        bot_answer: "Avoid"
+      },
+    
+    ]
+  },
+  
+  //tenth section
+
+
+  "Tell": {
+    bot_says: ["One of the best ways to recognise when you are oversharing is to pay attention to how those around you are reacting. It can be difficult to detect when you are oversharing in real time, but there are several indicators that you can use to stop yourself before you go too far. You may tell whether someone is uncomfortable by watching for behaviours like fidgeting or scrunching up their face."],
+    human_reply: [
+    {
+        human_response: "So i need to learn to overcome oversharing?",
+        bot_answer: "overcome" 
+      },
+    ]
+  },
+  
+  //eleventh section
+  
+  "overcome": {
+    bot_says: ["Knowing when to stop sharing too much is difficult, especially if you've done it frequently. Expect change to take time. There will be setbacks, just as in every other area of personal development, therefore you must be patient with yourself. Understanding when and when you overshare, as well as the effects it has on your mental health, can be very helpful in overcoming oversharing, but the first step is figuring out your triggers and how to stop yourself. Observing someone's body language is important because it's a terrific social skill and a means to determine whether or not what you said was suitable."],
+    human_reply: [
+      {
+        human_response: "So is oversharing really this bad?",
+        bot_answer: "Bad"
+      },
+      {
+        human_response: "Is there any hope to stop people from oversharing?",
+        bot_answer: "hope"
+      },
+    ]
+  },
+  
+  //twelfth section
+  
+    "hope": {
+    bot_says: ["There is some hope, people will be able to change this 'tell all' narrative that is pushed on social media, especially when you know it can take one post to damage your entire career. Please find a links of examples of when a post runined someones life for a reminder: https://nilefm.com/celebrity/article/5544/9-celebrities-who-destroyed-their-careers-with-unfortunate-social-media-posts,use this example as something to learn from and hopefully it will help"],
+    human_reply: [
+    {
+        human_response: "This bot has taught me a lot about the importance on my privacy!",
+        bot_answer: "thanks"
+      },
+    ]
+  }, 
+  
+  //thirteenth section
+  
+  "Bad": {
+    bot_says: ["After reading this, you might be wondering if sharing too much is bad or why it has a negative reputation. Influencers, YouTube vloggers, and reality TV show stars like the Kardashians are just a few examples of people that profit off their excessive sharing. I know we all enjoy peeking into other people's lives, but many of these celebrities want for some privacy when the cameras aren't rolling. However, many people think that because they have exposed so much of themselves to the public via a screen, paparazzi don't really believe that. When used properly, oversharing may be a wonderful tool for connecting with like-minded people and opening up about your challenges in order to receive support. Perhaps social media could serve as a helpful resource in their times of struggle"],
+  human_reply: [
+    {
+      human_response: "Thats amazing. At least there is a bit of hope!",
+      bot_answer: "hope"
+    },
+  ]
+},
+  
+  //fourteenth section
+  
+    "thanks": {
+    bot_says: ["It was a pleasure to speak with you, and I hope you took away a lot."],
+    human_reply: [
+    {
+        human_response: "Indeed I have! Cheers!",
+        bot_answer: "enjoyday"
+      },
+    ]
+  },
+  
+  //fifteenth section
+  
+    "enjoyday": {
+    bot_says: ["No issue. Enjoy your day and keep in mind that you can always return here for a reminder of how important maintaining your privacy is!"],
+  },
+
+
+}
+
+
+
+
+chatWindow.talk(convo)
+
+
+</script>
+</body>
