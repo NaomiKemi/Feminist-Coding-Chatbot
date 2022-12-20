@@ -66,41 +66,37 @@ of customers discussing their boyfriend/husbands problems because when they are 
 creates that false sense.You may not even know hairdresser's name but they're in your personal space,many people see that gives them
 the permission to start talking as if it was their partner or close friend", 
 	    
-	    "Another reason is a person finds solace in a stranger, some people can easily share intimate details to a complete stranger. You have
-	    no relationship with the stranger, so theres no reason for them to judge you and he or she does it doen;t matter because you will probably never 
-	    them again. Talking to a stranger is like a cheaper option to therapy",
+"Another reason is a person finds solace in a stranger, some people can easily share intimate details to a complete stranger. You have
+no relationship with the stranger, so theres no reason for them to judge you and he or she does it doen;t matter because you will probably never 
+them again. Talking to a stranger is like a cheaper option to therapy",
 	    
-	    "A person may also have a poor boundaries, some oversharers can sometimes lack boundaries. So they don't know that telling their 
-	    work colleague that their husband is bad in bed is not appropriate or even revealing finanicial struggles to total strangers. When 
-	    lacking boundaries it can cause a problem when building close relationships as a result the oversharer loses confidence about who 
-	    is interested in hearing about their daily issues "],
+"A person may also have a poor boundaries, some oversharers can sometimes lack boundaries. So they don't know that telling their 
+work colleague that their husband is bad in bed is not appropriate or even revealing finanicial struggles to total strangers. When 
+lacking boundaries it can cause a problem when building close relationships as a result the oversharer loses confidence about who 
+is interested in hearing about their daily issues "],
 	   
-	   human_reply: [
-	    {
-  	        human_response: "That was super interesting. So how can I avoid oversharing?",
-	        bot_answer: "Avoid"
-	      },
-	    ]
-	  },  
+human_reply: [
+{
+human_response: "That was super interesting. So how can I avoid oversharing?",
+bot_answer: "Avoid"}, ] },  
 	
-
-	    //sixth section
+//sixth section
 	  
-	    "Online": {
-	    bot_says: ["When using social media too much it lead to oversharing, a few reasons that people may share too much online", 
+"Online": {
+bot_says: ["When using social media too much it lead to oversharing, a few reasons that people may share too much online", 
 	    
-	    "Social media invite users to share everything about their lives, it's so easy to post an life update, a video, an event which
-	    just a click of a button. This can lead to the fear of missing out this leads to the feeling that people are doing things without
-	    you or that things are passing you by. Social media makes you think that oversharing is being authentic, using a platform to air
-	    out personal details can have some big consequences"
+"Social media invite users to share everything about their lives, it's so easy to post an life update, a video, an event which
+just a click of a button. This can lead to the fear of missing out this leads to the feeling that people are doing things without
+you or that things are passing you by. Social media makes you think that oversharing is being authentic, using a platform to air
+out personal details can have some big consequences"
 	    
-	    "To vent emotions and stress, i guarentee we probably all seen a facebook rent once in our life time and this is because social
-	    media gives everyone a voice and the platform to express it. Also to let our their frustrations according to the article Oversharing: Why Do We Do It and How Do We Stop?
-	    from the Huffngton Post" 'oversharing is fueled by out insecurites', people care too much what others think about them and try to change
-	    how people see them. This leads to oversharing too much info"
+"To vent emotions and stress, i guarentee we probably all seen a facebook rent once in our life time and this is because social
+media gives everyone a voice and the platform to express it. Also to let our their frustrations according to the article Oversharing: Why Do We Do It and How Do We Stop?
+from the Huffngton Post" 'oversharing is fueled by out insecurites', people care too much what others think about them and try to change
+how people see them. This leads to oversharing too much info"
 	    
-	    "Some people just want to 15 minutes of fame, to get that more likes, comments and shares they present their lives better
-	    than their life normally is so it can appear extranvagant so they can get noticed even if its too much", 
+"Some people just want to 15 minutes of fame, to get that more likes, comments and shares they present their lives better
+than their life normally is so it can appear extranvagant so they can get noticed even if its too much", 
 	   
 	   [
 	    {
