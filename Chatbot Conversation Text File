@@ -184,7 +184,14 @@ bot_answer: "overcome" },] },
 //eleventh section
 	  
 "overcome": {
-bot_says: ["There are so many amazing female music collectives that exist in the UK right now.", "Leeds-based Equaliser were one of the originals, who host monthly DJ workshops for women and non binary people as well as hosting club nights.", "Similarly in Manchester there are Not Bad for a Girl and All Hands On Deck...", "In Bristol theres Concrete Jungyals...", "And in London theres Rhythm Sister."],
+bot_says: ["Figuring how not over share is hard especially if you've done it many times. Don't
+expect change overnight. As with any other areas of personal development, there will be setbacks -
+so you need to have patience with yourself. Figuring out a time and place to overshare and understanding
+the effects on your mental health is quite useful in helping to overcome oversharing but the first
+steo is learning what are your triggers and how you stop yourself. One in portant thing is noticing 
+someones body language, this is a great social skill but also is a way to notice if maybe what you 
+said isn't appropriate"],
+
 human_reply: [
 {
 human_response: "quick question how do i read someones body language?",
