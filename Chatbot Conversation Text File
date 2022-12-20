@@ -190,7 +190,7 @@ said isn't appropriate"],
 
 human_reply: [
 {
-human_response: "quick question how do i read someones body language?",
+human_response: "Quick question how do I read someones body language?",
 bot_answer: "body language"
 	      },
 	      {
@@ -203,10 +203,12 @@ bot_answer: "body language"
 //twelfth section
 	  
 "Hope": {
-bot_says: ["looks like people can change and ...."],
+bot_says: ["Awesome isn't it!, People will be able to change this 'tell all' narrative that is
+pushed on social media, especially when one post can damage your entire career. Please find a linke of 
+examples of when a post runined someones life for a reminder: https://nilefm.com/celebrity/article/5544/9-celebrities-who-destroyed-their-careers-with-unfortunate-social-media-posts"],
 human_reply: [
 {
-human_response: "This bot has taught me a lot!",
+human_response: "This bot has taught me a lot about the importance on my privaxy!",
 bot_answer: "Taught"},]}, 
 	  
 //thirteenth section
