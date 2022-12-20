@@ -174,7 +174,7 @@ these are ways to tell if someone is uncomfortable"],
 	    
 human_reply: [
 {
-human_response: "So I need to learn to overcome oversharing?",
+human_response: "So i need to learn to overcome oversharing?",
 bot_answer: "overcome" },] },
 
 //eleventh section
@@ -190,11 +190,11 @@ said isn't appropriate"],
 
 human_reply: [
 {
-human_response: "Quick question how do I read someones body language?",
-bot_answer: "body language"
+human_response: "So is oversharing really this bad?",
+bot_answer: Bad"
 	      },
 	      {
-	        human_response: "💪🏾",
+	        human_response: "Is there any hope to stop people from oversharing?",
 	        bot_answer: "Hope"
 	      },
 	    ]
@@ -203,30 +203,35 @@ bot_answer: "body language"
 //twelfth section
 	  
 "Hope": {
-bot_says: ["Awesome isn't it!, People will be able to change this 'tell all' narrative that is
-pushed on social media, especially when one post can damage your entire career. Please find a linke of 
-examples of when a post runined someones life for a reminder: https://nilefm.com/celebrity/article/5544/9-celebrities-who-destroyed-their-careers-with-unfortunate-social-media-posts"],
+bot_says: ["There is some hope, people will be able to change this 'tell all' narrative that is
+pushed on social media, especially when you know it can take one post to damage your entire career. Please find a linke of 
+examples of when a post runined someones life for a reminder: https://nilefm.com/celebrity/article/5544/9-celebrities-who-destroyed-their-careers-with-unfortunate-social-media-posts,
+use this example as something to learn from and hopefully it will help"],
 human_reply: [
 {
 human_response: "This bot has taught me a lot about the importance on my privaxy!",
 bot_answer: "Taught"},]}, 
 	  
 //thirteenth section
-	  
-bot_says: ["Most of these collectives dont just give a platform for female DJs, but also outrightly welcome non-binary and trans DJs.", 
-"This approach is great because these collectives are recognising that these people are also marginalised within the industry (
-arguably more than female DJs).", "Black Lives Matter was recently a huge point of discussion within the female-identifying DJ community,
-and many collectives are rethinking how they can include people of colour."],
+"Bad":{	  
+bot_says: ["After all this you may be thinking is oversharing that bad or wondering why it has a bad
+rep. Many people make a living on oversharing like reality TV show stars such as the kardashians, influencers
+and YouTube vloggers. I know we all love looking into other people's life but many of these stars 
+crave for some privacy when the camera's are off but many peeople believe like paparazzi don't believe
+so as they've share so much of themselves with the public through a screen. Oversharing can be a powerful
+tool when used right as it can help you to open up and connect with similar indiviuals, sharring your struggles
+can be met with some suuport. Maybe social media could be use as a supportive tool rather than a place
+to ridicule others in their times of struggle"],
 
 human_reply: [
 {
-human_response: "Thanks for more understanding, i can fully overcome oversharing",
+human_response: "Thanks for more understanding, I feel like I can overcome oversharing",
 bot_answer: "Hope" },] },
 	  
 //fourteenth section
 	  
 "thanks": {
-bot_says: ["It has been my pleasure chatting with you!", "Hopefully you learnt a lot. This means nothing if you dont practise intersectionality in the real world, though.", "Get out there and make the world a better place by spreading the word of intersectional feminism!", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fspread%20the%20word.gif?v=1598778882151 />", "If you're into music, you could even try making your own collective in your city."],
+bot_says: ["It has been my pleasure chatting with you!", "Hopefully you learnt a lot."],
 human_reply: [
 
 {
@@ -236,7 +241,8 @@ bot_answer: "enjoyday" },] },
 //fifteenth section
 	  
 "enjoyday": {
-bot_says: ["No problem. Enjoy your day and remember that you can always come back here whenever!", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fbye.gif?v=1598779070192 />"],
+bot_says: ["No problem. Enjoy your day and remember that you can always come back here when you need 
+a reminder about how importance of your privacy is!"],
 },
 	
 
