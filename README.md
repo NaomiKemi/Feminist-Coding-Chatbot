@@ -6,5 +6,6 @@ This project wants to provide ways to help understand the importance of not shar
 
 In this project, I am just trying to help those that may have a hard time deciding what to share and what not to share. I've been through so many unfortunate moments where I've overshared, and it has caused me distress and I just wanted to curl up into a ball. But over time I have learned, and I would love to share that with the user. And this is where feminism ties into it, because people deem females as big gossipers; because people believe that we are wired to do so much more than men. I want to break that notion as everyone has maybe shared a bit too much at one period of their life and looks back now wishing they didn't. Feminism is all about challenging restrictive gender norms and all genders having equal rights and opportunities.
 
+ chatbot code:http://127.0.0.1:5501/About.html
  
 
