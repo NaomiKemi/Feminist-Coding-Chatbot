@@ -12,6 +12,8 @@ overshaing and you want to change your ways,theres is some hope and the personal
 human_reply: [
 {human_response: "Before we move on, can I have a bit more information of what oversharing is?",
 bot_answer: "Sure,good question", },]},
+
+first section//
 	  
 //second section
 "Sure,good question": {
@@ -23,34 +25,34 @@ human_reply: [
 { human_response: "Can we see the difference between oversharing online and offline.",
 bot_answer: "explore"},
 
-{
-human_response: "So why do people oversharing if it is has negative conquences",
+{human_response: "So why do people oversharing if it is has negative conquences",
 bot_answer: "negative"},] },
 	  
-//third section
+second section//
+
+//third section//
 	
 "explore": {
 bot_says: ["Awesome. What would you like to explore next?"],
 
-human_reply: [ {
-human_response: "Online oversharing",
+human_reply: 
+[{human_response: "Online oversharing",
 bot_answer: "Online" },
-{
- human_response: "Offline oversharing ",
- bot_answer: "Offline" },]
-},
+
+{human_response: "Offline oversharing ",
+ bot_answer: "Offline" },]},
 	  
 //fourth section
 	  
 "Negative": {
 	    bot_says: ["There are many reasons people may overshare, its often comes from
-	    a desire to connect to people, when maybe they feek lonely or it could be that a person
+	    a desire to connect to people, when maybe they feel lonely or it could be that a person
 	    comes from a family when oversharing is encouraged. Another reason people overshare is  
 	    because people want to avoid awkward silence and they will do anything to avoid it. But 
 	    through many studies it appears that using social media could lead to oversharing" ],
 	    human_reply: [
 	    {
-	        human_response: "So I know why, what are the types of oversharing",
+	        human_response: "So I know why, are there types of oversharing",
 	        bot_answer: "explore"
 	      },
 	    ]
@@ -59,8 +61,21 @@ bot_answer: "Online" },
 	    //fifth section
 	  
 	    "Offline": {
-	    bot_says: ["Alright, sit tight for a mini history lesson.", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fsimpsonsgif.gif?v=1595365242389 />", "There have been four waves of feminism so far.", "The first wave was the suffragette era, where women were fighting for the right to vote. This ran from 1888 to the early 1920s.", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fsuffragettegif.gif?v=1595370702692 />", "The second wave was when women fought for things such as equal pay and fighting against the expectation of being a housewife.", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fhousewifegif.gif?v=1595370975123 />", "It wasnt until the third wave when the term intersectionality was coined by scholar Kimberle Crenshaw.", "This was an important milestone because the first two waves were seen as racist by some black feminists.", "They believed that the other waves of feminism only catered to middle class, white women, and this needed to be changed.", "Luckily, now, intersectional feminism is gaining much more traction.", "Movements such as Black Lives Matter are bringing the issue of intersectionality to the forefront and awareness is being spread.", "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fblmgif.gif?v=1595371573617 />"],
-	    human_reply: [
+	    bot_says: ["You've probably been at work and seen many incidents of people discussing marital issues with your colleagues", 
+	    "This is an example of oversharing", "How and why someone shares offline is something to delve into because many people only
+	    look at social media being the reason why many people overshare","We are going to be touching of 3 of the biggest reasons why", 
+	    "One reason is because you might feel a false sense of intimacy, this might be why you've seen soo many hairdresser scene in filmas
+	    of customers discussing their boyfriend/husbands problems because when they are cutting yout hair or maybe painting your nails it
+	    creates that false sense.You may not even know hairdresser's name but they're in your personal space,many people see that gives them
+	    the permission to start talking as if it was their partner or close friend", 
+	    
+	    "Another reason is a person finds solace in a stranger .",
+	    "They believed that the other waves of feminism only catered to middle class, white women, and this needed to be changed.", 
+	    "Luckily, now, intersectional feminism is gaining much more traction.", "
+	    Movements such as Black Lives Matter are bringing the issue of intersectionality to the forefront and awareness is being spread.", 
+	    "<img src=https://cdn.glitch.com/9678bc52-04c3-4f2a-9ff2-b10f43d33d72%2Fblmgif.gif?v=1595371573617 />"],
+	   
+	   human_reply: [
 	    {
   	        human_response: "That was super interesting. But what about other types of intersectionality?",
 	        bot_answer: "othertypes"
